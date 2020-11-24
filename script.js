@@ -17,7 +17,7 @@
         addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
         deposit = confirm('Есть ли у вас депозит в банке?');
        
-        console.log(typeof money,typeof income,typeof deposit);
+    console.log(typeof money,typeof income,typeof deposit);
     console.log(addExpenses.length);
     console.log("Период равен " + period +" месяцев");
     console.log("Цель заработать " + mission +" рублей");
