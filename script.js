@@ -1,8 +1,9 @@
-'use strict';
-    let money = 8700,
+    'use strict';
+    
+    let money = prompt('Ваш месячный доход ?') * 1,
         income = "фриланс" , 
-        addExpenses = ["Еда, Вода, Развлечения"], 
-        deposit = true, 
+        addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую'), 
+        deposit = confirm('Есть ли у вас депозит в банке?'), 
         mission = 100000,
         period = 11,
         budgetDay, budgetMonth,
@@ -13,10 +14,6 @@
                  // и цен во сколько обойдется (на каждую). 
     
     
-        money = prompt('Ваш месячный доход ?') * 1;
-        addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
-        deposit = confirm('Есть ли у вас депозит в банке?');
-       
     console.log(typeof money,typeof income,typeof deposit);
     console.log(addExpenses.length);
     console.log("Период равен " + period +" месяцев");
